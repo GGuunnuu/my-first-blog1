@@ -6,13 +6,21 @@
         <div>
                 <h1><a href="">FUCK YOU</a></h1>
         </div>
-
-        <div>
-            <p>published: 이천이십일년사월십구일 네시십오분</p>
-            <h2><a href="">WTF</a></h2>
-            <p><strong>SHITTTTTTTTTTTTTT!!!!!!!!!</strong></p>
-        </div>
-
-
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
+
+
+
+
+
+<!--            <p>published: 이천이십일년사월십구일 네시십오분</p>-->
+<!--            <h2><a href="">WTF</a></h2>-->
+<!--            <p><strong>SHITTTTTTTTTTTTTT!!!!!!!!!</strong></p>-->
+
