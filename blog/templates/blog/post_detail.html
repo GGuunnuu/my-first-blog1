@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>One bad bitch, and she do what I say so
+Two big .40s and a big ass Draco (two, boom, boom)
+Three more millions when you ask how my day go
+Poured up a 4, now that's blueberry Faygo
+One false move, and we straight to shooting shit
+Two small bands just to take you out real quick (bands)
+Three more hoes, pull up, I'm fucking shit
+That's how it go, big bands, I'm thumbin' shit (that's how it goes)
+One bad bitch, and she do what I say so (yeah, gang)
+Two big .40s and a big ass Draco (two)
+Three more millions when you ask how my day go
+Poured up a 4, now that's blueberry Faygo
+One false move, and we straight to shooting shit
+Two small bands just to take you out real quick (bands)
+Three more hoes, pull up, I'm fucking shit
+That's how it go, big bands, I'm thumbin' shit</p>
+    </div>
+{% endblock %}
